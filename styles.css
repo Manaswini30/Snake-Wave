@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.body{
+    background: url("DALL·E\ 2024-12-16\ 12.37.26\ -\ A\ cute\ and\ visually\ engaging\ background\ image\ for\ a\ snake\ game\ titled\ \'Snake\ Wave.\'\ The\ design\ features\ a\ playful\ cartoon\ snake\ with\ a\ friendly\ smile\,.webp");
+    min-height: 100vh;
+    background-size: 95vh;
+    background-color: rgb(2, 80, 80);
+    background-repeat:space;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(lavender , #DFFFE0);
+    width: 88vmin;
+    height: 95vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
